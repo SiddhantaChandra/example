@@ -22,7 +22,7 @@ function Home() {
   useEffect(() => {
     const delay = setTimeout(() => {
       setIsVisible(true);
-    }, 200);
+    }, 1000);
 
     return () => {
       clearTimeout(delay);
