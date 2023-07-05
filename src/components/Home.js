@@ -7,6 +7,7 @@ import { useState } from 'react';
 
 function Home() {
   const [image, setImage] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const cycleImage = () => {
@@ -16,6 +17,16 @@ function Home() {
 
     const interval = setInterval(cycleImage, 10000);
     return () => clearInterval(interval);
+  }, []);
+
+  useEffect(() => {
+    const delay = setTimeout(() => {
+      setIsVisible(true);
+    }, 200);
+
+    return () => {
+      clearTimeout(delay);
+    };
   }, []);
 
   const heroLinks = [
@@ -50,7 +61,10 @@ function Home() {
             alt="engineer"
             className={` mt-48 z-20 2xl:mt-64 duration-300 `}
           />
-          <div className="h-8 w-24 rounded-full bg-transparent hero-shadow absolute bottom-3 left-[56%] transform -translate-x-1/2 z-[-1] 2xl:w-64"></div>
+          <div
+            style={{ display: isVisible ? 'block' : 'none' }}
+            className="h-8 w-24 rounded-full bg-transparent hero-shadow absolute bottom-3 left-[56%] transform -translate-x-1/2 z-[-1] 2xl:w-64"
+          ></div>
         </div>
 
         <div className="justify-items-center pl-24">
