@@ -11,7 +11,6 @@ function Home() {
 
   useEffect(() => {
     const cycleImage = () => {
-      console.log('gay');
       setImage((prevImage) => !prevImage);
     };
 
