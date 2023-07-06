@@ -1,12 +1,7 @@
 import React from 'react';
-import NavBar from './NavBar';
 
 function Products() {
-  return (
-    <div>
-      <NavBar />
-    </div>
-  );
+  return <div></div>;
 }
 
 export default Products;

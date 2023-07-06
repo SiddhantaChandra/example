@@ -38,7 +38,7 @@ function Home() {
   return (
     <div className="2xl:px-24 md:px-12 relative">
       <div className="absolute top-[2%]  z-20 cursor-default  2xl:top-[2%]">
-        <h3 className="font-Hero text-[4.2rem] uppercase text-black leading-[6rem]  2xl:leading-[8rem] 2xl:text-[6rem]">
+        <h3 className="font-Hero text-[4.2rem]  uppercase text-black leading-[5.4rem]  2xl:leading-[7.2rem] 2xl:text-[6rem]">
           Protecting Lives with
           <br />
           Quality Products
@@ -47,7 +47,7 @@ function Home() {
           Reliable Safety Solutions: Building a Safer Tomorrow through Quality
           Products and Expertise.
         </h4>
-        <h4 className=" w-[18rem] font-medium font-OpenSans text-md hidden 2xl:pt-6 2xl:block">
+        <h4 className=" w-[18rem] font-medium font-OpenSans text-sm hidden 2xl:pt-6 2xl:block">
           Reliable Safety Solutions: We are committed to forging a safer future
           by delivering top-notch products that meet the highest quality
           standards.
@@ -110,7 +110,7 @@ function Home() {
             <img
               src={rotatingText}
               alt="my svg"
-              className="rotating-svg  w-44"
+              className="rotating-svg  2xl:w-44"
             />
           </div>
         </div>
